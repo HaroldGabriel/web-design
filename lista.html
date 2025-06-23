@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>       
+        <header>
+            <h1>Pastelería Buenaventura</h1>
+            <p>Endulzamos tus momentos más especiales.</p>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="separador"></div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger-icon">☰</label>
+        <main>
+            <section class="sidebar-content">
+                <aside class="sidebar">
+                    <h2>Sidebar</h2>
+                    <div class="filtro-contenido">
+                        <div class="filtro-precio">
+                            <p class="text-precio">Filtrar por precio</p>
+                            <input type="range" id="price-range" min="0" max="100" step="1" value="0" oninput="valor.value = '$' + this.value">
+                            <label for="price-range">Precio: <output id="valor">$0</output></label>
+                            <button>Filtrar</button>
+                        </div>
+                        <div class="filtro-categoria">
+                            <p class="text-categoria">Categoria de productos</p>
+                            <p><a href="">Cupcake</a></p>
+                            <p><a href="">Pasteles</a></p>
+                            <p><a href="">Complentos</a></p>
+                        </div>
+                        <div class="contenido-pastel">
+                            <p class="text-pastel">¿Necesitas algo mas personal?</p>
+                            <p>También hacemos pasteles personalizados, ideales para cualquier ocasión especial. Solo cuéntanos tu idea y la haremos realidad.</p>
+                            <img src="img_perzonalizado.jpeg" alt="">
+                            <button class="boton-pastel">Vamos</button>
+                        </div>
+                    </div>                   
+                </aside>
+            </section>
+            <section class="content">
+                <p>Pasteles y postres artesanales para cada ocasión.</p>
+                <h2>Nuestros Productos</h2>
+                <section class="products">
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 1">
+                        <h3>Producto 1</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$19.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 2">
+                        <h3>Producto 2</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$29.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 3">
+                        <h3>Producto 3</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$39.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 4">
+                        <h3>Producto 4</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$49.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 5">
+                        <h3>Producto 5</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$59.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 6">
+                        <h3>Producto 6</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$69.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 7">
+                        <h3>Producto 7</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$79.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 8">
+                        <h3>Producto 8</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$89.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 9">
+                        <h3>Producto 9</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$99.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 10">
+                        <h3>Producto 10</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$109.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 11">
+                        <h3>Producto 11</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$119.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="img_1.jpg" alt="Producto 12">
+                        <h3>Producto 12</h3>
+                        <p>Descripción breve del producto.</p>
+                        <p><strong>$129.99</strong></p>
+                        <button>Agregar al carrito</button>
+                    </div>                  
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 My Web Page</p>
+        </footer>
+    </body>
+</html>
