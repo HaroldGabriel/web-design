@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid limegreen;
 }
 
 ul,li{
@@ -13,9 +12,6 @@ a{
     text-decoration: none;
     color: inherit;
     }
-img{
-    max-width: 100%;
-}
 
 html, body {
     margin: 0;
@@ -24,8 +20,7 @@ html, body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 100dvh;
-    width: 100vw;
+    height: 100%;
 }
 /* Estilos para el encabezado */
 header{
@@ -33,10 +28,7 @@ header{
     color: white;
     margin: 0px;
     text-align: center;    
-    h1{
-        font-size: clamp(1.5rem, 2vw, 3rem);
-        
-    }
+
     .navbar{
         background-color: antiquewhite;
 
@@ -45,11 +37,12 @@ header{
             flex-direction: row;
             justify-content: center;
             gap: 20px;
+            padding: 10px;
             li{
                 a{
                     color: black;
                     font-size: 1.2rem;
-
+                    padding: 10px;
                     background-color: violet;
                     border-radius: 5px;
                     transition: background-color 0.3s;
@@ -91,10 +84,10 @@ main{
     color: black;
 
     h2{
-        font-size: clamp(1.5rem, 2vw, 3rem);
+        font-size: 2.5rem;
     }
     p{
-        font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+        font-size: 1.2rem;
         line-height: 1.5;
     }
 }
@@ -110,17 +103,17 @@ main{
     ul{       
         width: 60%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         list-style-type: none;
         padding: 0;
 
         li{
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            margin: 10px 0;
             font-size: 1.2rem;
             gap: 10px;
             img{
@@ -134,7 +127,7 @@ main{
 
     .ver-mas{
         background-color: #4CAF50;
-
+        padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;
         transition: background-color 0.3s;
@@ -177,6 +170,7 @@ main{
 
             .content-description{
                 width: 50%;
+                padding: 0 20px;
                 overflow-wrap: break-word;
             }
         }
@@ -196,7 +190,7 @@ main{
                     justify-content: center;
                     img{
                         width: 100%;
-                        height: 100%;
+                        height: 1000%;
                     }
                 }
             }
@@ -214,20 +208,18 @@ footer{
 }
 
 .footer-container{
-    width: 100%;
+    width: 80%;
 }
 .footer-main{
     background-color: #7a1e6b;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
     .footer-item{
         display: flex;
-        width: 100%;
-        .footer-contact {
-            width: 100%;
-        }
+        
         .footer-libro-reclamaciones{
             img{
                 border-radius: 10px;
@@ -254,29 +246,24 @@ footer{
 .footer-copyright{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    .footer-copyright-text {
-        p{
-            font-size: clamp(0.7rem, 1.5vw, 1.5rem);   
-        }
-    }
-
+    gap: 20px;
     .footer-metodos-pago{
-        height: 80%;
-        width: 100%;
+        height: 40px;
+        width: 250px;
         background-color: yellow;
         ul{
             display: flex;
             flex-direction: row;
             height: 100%;
-            width: 100%;
+            gap: 10px;
             li {
-                    width: 80%;
+                    width: 100%;
+                    height: 100%;
                 img {
-                    width: 70%;
+                    width: 100%;
                     height: 100%;
                 }
             }
