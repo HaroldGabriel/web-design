@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="desarrollador web, HTML, CSS, JavaScript, portfolio">
+    <meta name="author" content="Harold Barrientos" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="..." />
+    <meta property="og:description" content="..." />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com" />
+    <meta property="og:image" content="..." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="..." />
+    <meta name="twitter:description" content="..." />
+    <meta name="twitter:image" content="..." />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://www.example.com" />
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Document</title>
 </head>
     <body>
+        <!-- ========================================
+                 HEADER CON NAVEGACIÓN RESPONSIVE
+        ======================================== -->
         <header>
             <h1>Pastelería Buenaventura</h1>
             <p>This is a simple HTML document.</p>
+            <!-- MENÚ MÓVIL -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="hamburger-icon">☰</label>
             <nav class="navbar">
@@ -21,6 +42,9 @@
                 </ul>
             </nav>
         </header>
+        <!-- ========================================
+                 CONTENIDO PRINCIPAL
+        ======================================== -->
         <main>
             <section class="img-content">
                 <img src="img_principal.jpg" alt="">
@@ -31,46 +55,50 @@
                 <p>encuéntralas en sus diferentes tamaños y sabores</p>
             </section>
             <section class="list-content">
-                <ul>
-                    <li>
+                <div class="list-container">
+                    <div class="slide">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de chocolate">
                         <p>Pastel de chocolate</p>
                         <p>S/. 30.00</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="slide">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de vainilla">
                         <p>Pastel de vainilla</p>
-                        <p>S/. 28.00</p>  
-                    </li>
-                    <li>
+                        <p>S/. 28.00</p>
+                    </div>
+                    <div class="slide">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de fresa">
                         <p>Pastel de fresa</p>
                         <p>S/. 26.00</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="slide">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de zanahoria">
                         <p>Pastel de zanahoria</p>
                         <p>S/. 25.00</p>
-                    </li>
-                    <li>
+                    </div>
+                    <div class="slide"> 
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de red velvet">
                         <p>Pastel de red velvet</p>
                         <p>S/. 32.00</p>
-                    </li>
-                </ul>
-                <p class="ver-mas"><a href="lista.html">Ver más</a></p>
+                    </div>
+                </div>
+                
             </section>
+            <div class="btn-ver-mas">
+                <p class="ver-mas"><a href="lista.html">Ver más</a></p>
+            </div>
             <section class="content-skin">
                 <div class="container">
                     <div class="grid1">
-                        <div class="img-content">
-                            <img src="img/img_list_content/img1.jpg" alt="">
-                        </div>                        
                         <div class="content-description">
                             <p>¡Cada torta es única como tú!</p>
                             <p>Por eso en Dulcefina personalizamos tu pedido</p>
                             <p>¿Estás próxima a casarte, celebrar un bautizo o tener una fiesta temática? Cuéntanos cómo imaginas tu celebración soñada y nosotras hacemos la torta adecuada.</p>
                         </div>
+                        <div class="img-content">
+                            <img src="img/img_list_content/img1.jpg" alt="">
+                        </div>                        
+                        
                     </div>
                     <div class="grid2">
                         <ul>
@@ -83,6 +111,9 @@
                 </div>
             </section>
         </main>
+        <!-- ========================================
+                         FOOTER
+         ======================================== -->
         <footer>
             <div class="footer-container">
                 <section class="footer-main">                   
@@ -98,9 +129,9 @@
                             <p>Email: contacto@pasteleriabuenaventura.com</p>
                         </div>
                     </div>
-                    <div class="footer-item">
-                        <div class="footer-social-media">
-                            <h3>Redes Sociales</h3>
+                    <div class="footer-redes-sociales">
+                        <h3>Redes Sociales</h3>
+                        <div class="footer-social-media">                         
                             <a href="#"><img src="img/img_footer/facebook.png" alt="Facebook"></a>
                             <a href="#"><img src="img/img_footer/instagram.jpeg" alt="Instagram"></a>
                             <a href="#"><img src="img/img_footer/twiter.png" alt="Twitter"></a>
