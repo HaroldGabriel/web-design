@@ -6,25 +6,44 @@
         <link rel="stylesheet" href="style.css">
         <title>Document</title>
     </head>
-    <body>       
-        <header>
+    <body>
+        <!--========================================
+            HEADER CON NAVEGACIÓN RESPONSIVE
+        ======================================== -->       
+        <header class="header-main">
             <h1>Pastelería Buenaventura</h1>
-            <p>Endulzamos tus momentos más especiales.</p>
+            <p>This is a simple HTML document.</p>
+            <!-- MENÚ MÓVIL -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger-icon">☰</label>
             <nav class="navbar">
                 <ul class="nav-links">
+                    <label for="menu-toggle" class="close-btn">✖</label>
                     <li><a href="/">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
                     <li><a href="#about">Acerca de</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
                 </ul>
             </nav>
         </header>
         <div class="separador"></div>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger-icon">☰</label>
-        <main>
-            <section class="sidebar-content">
+        <!--========================================
+            CONTENIDO PRINCIPAL CON SIDEBAR
+        ======================================== --> 
+        <main>    
+            <!-- Botón hamburguesa (fuera del <aside>) -->
+            <input type="checkbox" id="menu-sidebar">
+            <div class="contenedor-hamburger">
+                <p>Filtrar</p>
+                <label for="menu-sidebar" class="hamburger-icon-sidebar">☰</label>
+            </div>    
+            <section class="sidebar-content">               
+                <!-- Aside lateral -->
                 <aside class="sidebar">
                     <h2>Sidebar</h2>
+                    <label for="menu-sidebar" class="close-btn">✖</label>
                     <div class="filtro-contenido">
                         <div class="filtro-precio">
                             <p class="text-precio">Filtrar por precio</p>

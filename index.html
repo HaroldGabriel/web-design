@@ -21,13 +21,14 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
     <body>
         <!-- ========================================
                  HEADER CON NAVEGACIÓN RESPONSIVE
         ======================================== -->
-        <header>
+        <header class="header-main">
             <h1>Pastelería Buenaventura</h1>
             <p>This is a simple HTML document.</p>
             <!-- MENÚ MÓVIL -->
@@ -37,8 +38,11 @@
                 <ul class="nav-links">
                     <label for="menu-toggle" class="close-btn">✖</label>
                     <li><a href="/">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
                     <li><a href="#about">Acerca de</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
                 </ul>
             </nav>
         </header>
@@ -46,37 +50,41 @@
                  CONTENIDO PRINCIPAL
         ======================================== -->
         <main>
-            <section class="img-content">
-                <img src="img_principal.jpg" alt="">
+            <section class="hero-img-content">
+                <!--<img src="img_principal.jpg" alt="img_hero_content" loading="lazy">-->
+                <div class="slide" style="background-image: url('img_principal.jpg');"></div>
+                <div class="slide" style="background-image: url('img_1.jpg');"></div>
+                <div class="slide" style="background-image: url('img_1.jpg');"></div>
+                <div class="slide" style="background-image: url('img_1.jpg');"></div>
             </section>
             <section class="text-content">
-                <h2>!Las más pedidas</h2>
+                <h2>¡Las más pedidas!</h2>
                 <p>Las preferidas por nuestros clientes.</p>
                 <p>encuéntralas en sus diferentes tamaños y sabores</p>
             </section>
             <section class="list-content">
                 <div class="list-container">
-                    <div class="slide">
+                    <div class="slide-product-card">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de chocolate">
                         <p>Pastel de chocolate</p>
                         <p>S/. 30.00</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide-product-card">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de vainilla">
                         <p>Pastel de vainilla</p>
                         <p>S/. 28.00</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide-product-card">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de fresa">
                         <p>Pastel de fresa</p>
                         <p>S/. 26.00</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide-product-card">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de zanahoria">
                         <p>Pastel de zanahoria</p>
                         <p>S/. 25.00</p>
                     </div>
-                    <div class="slide"> 
+                    <div class="slide-product-card">
                         <img src="img/img_list_content/img1.jpg" alt="Pastel de red velvet">
                         <p>Pastel de red velvet</p>
                         <p>S/. 32.00</p>
@@ -92,20 +100,20 @@
                     <div class="grid1">
                         <div class="content-description">
                             <p>¡Cada torta es única como tú!</p>
-                            <p>Por eso en Dulcefina personalizamos tu pedido</p>
-                            <p>¿Estás próxima a casarte, celebrar un bautizo o tener una fiesta temática? Cuéntanos cómo imaginas tu celebración soñada y nosotras hacemos la torta adecuada.</p>
+                            <p>Por eso en Pastelería Buenaventura personalizamos tu pedido</p>
+                            <p>¿Estás próxima a casarte, celebrar un bautizos o tener una fiesta temática? Cuéntanos cómo imaginas tu celebración soñada y nosotras hacemos la torta adecuada.</p>
                         </div>
                         <div class="img-content">
-                            <img src="img/img_list_content/img1.jpg" alt="">
+                            <img src="img/img_list_content/img1.jpg" alt="logo_img_content">
                         </div>                        
                         
                     </div>
                     <div class="grid2">
                         <ul>
-                            <li><img src="img/img_list_content/img1.jpg" alt=""></li>
-                            <li><img src="img/img_list_content/img1.jpg" alt=""></li>
-                            <li><img src="img/img_list_content/img1.jpg" alt=""></li>
-                            <li><img src="img/img_list_content/img1.jpg" alt=""></li>
+                            <li><img src="img/img_list_content/img1.jpg" alt="logo_img1"></li>
+                            <li><img src="img/img_list_content/img1.jpg" alt="logo_img2"></li>
+                            <li><img src="img/img_list_content/img1.jpg" alt="logo_img3"></li>
+                            <li><img src="img/img_list_content/img1.jpg" alt="logo_img4"></li>
                         </ul>
                     </div>
                 </div>
@@ -119,7 +127,7 @@
                 <section class="footer-main">                   
                     <div class="footer-item">                       
                         <div class="footer-libro-reclamaciones">
-                            <a href="#home"><img src="img/img_footer/libro_reclamaciones.png" alt=""></a>
+                            <a href="#home"><img src="img/img_footer/libro_reclamaciones.png" alt="logo_libro_reclamaciones"></a>
                         </div>
                     </div>
                     <div class="footer-item">
@@ -129,21 +137,21 @@
                             <p>Email: contacto@pasteleriabuenaventura.com</p>
                         </div>
                     </div>
-                    <div class="footer-redes-sociales">
+                    <div class="footer-social">
                         <h3>Redes Sociales</h3>
                         <div class="footer-social-media">                         
-                            <a href="#"><img src="img/img_footer/facebook.png" alt="Facebook"></a>
-                            <a href="#"><img src="img/img_footer/instagram.jpeg" alt="Instagram"></a>
-                            <a href="#"><img src="img/img_footer/twiter.png" alt="Twitter"></a>
+                            <a href="#"><img src="img/img_footer/facebook.png" alt="logo_Facebook"></a>
+                            <a href="#"><img src="img/img_footer/instagram.jpeg" alt="logo_Instagram"></a>
+                            <a href="#"><img src="img/img_footer/twiter.png" alt="logo_Twitter"></a>
                         </div>
                     </div>
                 </section>
                 <section class="footer-copyright">                  
                     <div class="footer-metodos-pago">
                         <ul>
-                            <li><img src="img/img_footer/Visa-Logo.jpg" alt="Visa"></li>
-                            <li><img src="img/img_footer/mastercard-logo.jpg" alt="MasterCard"></li>
-                            <li><img src="img/img_footer/paypal.png" alt="PayPal"></li>
+                            <li><img src="img/img_footer/Visa-Logo.jpg" alt="logo_Visa"></li>
+                            <li><img src="img/img_footer/mastercard-logo.jpg" alt="logo_MasterCard"></li>
+                            <li><img src="img/img_footer/paypal.png" alt="logo_PayPal"></li>
                         </ul>
                     </div>
                     <div class="footer-copyright-text">
