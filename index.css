@@ -316,7 +316,9 @@ main{
     }
 }
 
-/* Estilos para el pie de página */
+/*========================================
+                FOOTER
+======================================== */
 footer{
     background-color:var(--color-primary);
     width: 100%;

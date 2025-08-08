@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
         <title>Document</title>
     </head>
     <body>
@@ -11,8 +14,10 @@
             HEADER CON NAVEGACIÓN RESPONSIVE
         ======================================== -->       
         <header class="header-main">
+            <div class="logo">
+                <img src="../img/logo_original.png" alt="">
+            </div>
             <h1>Pastelería Buenaventura</h1>
-            <p>This is a simple HTML document.</p>
             <!-- MENÚ MÓVIL -->
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="hamburger-icon">☰</label>
@@ -20,7 +25,7 @@
                 <ul class="nav-links">
                     <label for="menu-toggle" class="close-btn">✖</label>
                     <li><a href="/">Inicio</a></li>
-                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="/lista.html">Menú</a></li>
                     <li><a href="#about">Acerca de</a></li>
                     <li><a href="#contact">Contacto</a></li>
                     <li><a href="#galeria">Galería</a></li>
@@ -28,7 +33,7 @@
                 </ul>
             </nav>
         </header>
-        <div class="separador"></div>
+        <div class="separador-section"></div>
         <!--========================================
             CONTENIDO PRINCIPAL CON SIDEBAR
         ======================================== --> 
@@ -157,8 +162,47 @@
                 </section>
             </section>
         </main>
+        <div class="separador-section"></div>
+        <!-- ========================================
+                         FOOTER
+         ======================================== -->
         <footer>
-            <p>&copy; 2023 My Web Page</p>
+            <div class="footer-container">
+                <section class="footer-main">                   
+                    <div class="footer-item">                       
+                        <div class="footer-libro-reclamaciones">
+                            <a href="#home"><img src="img/img_footer/libro_reclamaciones.png" alt="logo_libro_reclamaciones"></a>
+                        </div>
+                    </div>
+                    <div class="footer-item">
+                        <div class="footer-contact">
+                            <h3>Contacto</h3>
+                            <p>Teléfono: 123-456-7890</p>
+                            <p>Email: contacto@pasteleriabuenaventura.com</p>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Redes Sociales</h3>
+                        <div class="footer-social-media">                         
+                            <a href="#"><img src="img/img_footer/facebook.png" alt="logo_Facebook"></a>
+                            <a href="#"><img src="img/img_footer/instagram.jpeg" alt="logo_Instagram"></a>
+                            <a href="#"><img src="img/img_footer/twiter.png" alt="logo_Twitter"></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="footer-copyright">                  
+                    <div class="footer-metodos-pago">
+                        <ul>
+                            <li><img src="img/img_footer/Visa-Logo.jpg" alt="logo_Visa"></li>
+                            <li><img src="img/img_footer/mastercard-logo.jpg" alt="logo_MasterCard"></li>
+                            <li><img src="img/img_footer/paypal.png" alt="logo_PayPal"></li>
+                        </ul>
+                    </div>
+                    <div class="footer-copyright-text">
+                        <p>&copy; 2025 Pastelería Buenaventura. Todos los derechos reservados.</p>
+                    </div>              
+                </section>
+            </div>
         </footer>
     </body>
 </html>
