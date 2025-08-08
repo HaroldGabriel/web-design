@@ -38,6 +38,17 @@ html, body {
     flex-direction: column;
     height: 100dvh;
 }
+/* SEPARADOR */
+.separador-section{
+    display: block;
+    min-height: 40px;
+    background: repeating-linear-gradient(
+        90deg,
+        #f8c8dc 0 40px,  /* rosa pastel */
+        white 40px 80px  /* blanco */
+        /* q horrible es diseño aaa*/
+    );
+}
 /*========================================
     HEADER CON NAVEGACIÓN RESPONSIVE
 ======================================== */
@@ -72,7 +83,14 @@ header{
     background-color: var(--color-primary);
     color: white;
     margin: 0px;
-    text-align: center;    
+    text-align: center;
+    /*  IMAGEN LOGO */
+    .logo{
+        img{
+            width: 50%;
+            height: 50%;
+        }
+    }
     h1{
         font-size: clamp(1rem, 2vw, 3rem);
         
@@ -175,10 +193,15 @@ main{
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow-x: auto;
-    gap: 10px;
+
+    padding: 0 15px;
+    
     .list-container {
         display: flex;
         flex-wrap: nowrap;
+        /* mobil */
+        
+        gap: 20px;
         .slide-product-card {
             height: 100%;
             display: flex;
@@ -188,8 +211,8 @@ main{
             scroll-snap-align: center;
             flex: 0 0 auto;
             img{
-                width: 50%;
-                height: 50%;
+                width: 160px;
+                height: 160px;
                 border-radius: 50%;
             }
         }       
@@ -240,8 +263,13 @@ main{
             align-items: center;           
             gap: 20px;
             .img-content{
+                display: flex;
+                align-items: center;
                 width: 100%;
                 height: 100%;
+                background: white;
+                padding: 5px;
+                border-radius: 5px;
                 img {
                     width: 100%;
                     height: 100%;
@@ -269,15 +297,18 @@ main{
                 justify-content: space-around;
                 gap: 20px;
                 li{
+                    background: white;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    
+                    padding: 5px;
+                    border-radius: 5px;
                     img{
-                        width: 100%;
-                        height: 100%;
+                        width: 220px;
+                        height: 220px;
                         border-radius: 5px;
+                        object-fit: cover;
                     }
                 }
             }
@@ -313,9 +344,10 @@ footer{
         justify-content: center;
         align-items: center;
         width: 100%;
-        .footer-contact {
+        .footer-contact{
             width: 100%;
             h3,p{
+                text-align: center;
                 font-size: clamp(0.8rem, 1.3vw, 1.8rem);
             }
         }
@@ -410,7 +442,17 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
         padding: 1.3rem 5%;
+        height: 15%;
+        .logo{
+            width: 8%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
         .navbar {
             position: static; /* Cambia la posición de la barra de navegación */
             padding-top: 0;
@@ -450,6 +492,10 @@ footer{
                 flex: initial;
                 width: 30%; /* Ajusta el ancho de cada slide */
                 height: 50%; /* Ajusta la altura de cada slide */
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
             }
         }
     }
@@ -464,6 +510,7 @@ footer{
             .grid1{
                 display: flex;
                 flex-direction: row;
+
             }
 
             .grid2{
@@ -474,14 +521,15 @@ footer{
                     flex-direction: row;
                     justify-content: space-around;
                     gap: 20px;
-                    li{
+                    li{                       
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
+                        
                         img{
-                            width: 100%;
-                            height: 1000%;
+                            width: clamp(80px, 20vw, 336px); /* responsivo */
+                            height: clamp(80px, 20vw, 336px);
                         }
                     }
                 }
@@ -498,6 +546,7 @@ footer{
 
     .footer-container{
         width: 80%;
+        gap: 30px;
     }
     .footer-main{
         width: 100%;
@@ -524,6 +573,11 @@ footer{
                 border-radius: 50%;
                 width: 2.5rem;
                 height: 2.5rem;               
+            }
+            .footer-contact{
+                h3,p{
+                    text-align: start;
+                }
             }
         }
 
@@ -573,6 +627,7 @@ footer{
 
         .footer-copyright-text{
             order: 1;
+            
         }
     }
 
